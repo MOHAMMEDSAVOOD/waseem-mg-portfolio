@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight, Mail, Phone, MapPin, Globe, Share2, ExternalLink } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import mwmgLogo from '../../assets/mwmg-logo.png';
 import { BRAND } from '../../data/brandData';
 import { COMPANIES } from '../../data/ecosystemData';
@@ -21,7 +21,15 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, onSelectCompany })
           <div className="lg:col-span-5 space-y-4">
             {/* Logo */}
             <div className="flex items-center">
-              <img src={mwmgLogo} alt="MWMG Logo" className="h-10 sm:h-12 w-auto object-contain" />
+              <img
+                src={mwmgLogo}
+                alt="Mohammed Waseem MG — MWMG Logo"
+                width={160}
+                height={80}
+                loading="lazy"
+                decoding="async"
+                className="h-10 sm:h-12 w-auto object-contain"
+              />
             </div>
 
             <p className="text-xs text-slate-400 max-w-sm leading-relaxed">

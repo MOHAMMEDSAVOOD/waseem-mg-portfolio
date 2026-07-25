@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Camera, Maximize2 } from 'lucide-react';
+import { Maximize2 } from 'lucide-react';
 import { GALLERY_ITEMS } from '../../data/speakingData';
 
 export const GallerySection: React.FC = () => {
@@ -69,6 +69,10 @@ export const GallerySection: React.FC = () => {
               <img
                 src={item.imageUrl}
                 alt={item.title}
+                width={800}
+                height={450}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover filter contrast-110 group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent p-4 flex flex-col justify-between opacity-90 group-hover:opacity-100 transition-opacity">
@@ -102,6 +106,7 @@ export const GallerySection: React.FC = () => {
                 <button
                   onClick={() => setActiveLightbox(null)}
                   className="p-1.5 rounded-full bg-white/5 text-slate-400 hover:text-white"
+                  aria-label="Close image lightbox"
                 >
                   ✕
                 </button>
@@ -111,6 +116,10 @@ export const GallerySection: React.FC = () => {
                 <img
                   src={selectedItem.imageUrl}
                   alt={selectedItem.title}
+                  width={1200}
+                  height={675}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover"
                 />
               </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrench, Building, TrendingUp, Cpu, Layers, Tv, Calendar } from 'lucide-react';
+import { Building, TrendingUp, Cpu, Layers, Tv, Calendar } from 'lucide-react';
 
 export const ServicesGrid: React.FC = () => {
   const services = [

@@ -1,5 +1,5 @@
 import React from 'react';
-import { UserCheck, ShieldCheck, Award, Building, ArrowUpRight, Sparkles } from 'lucide-react';
+import { ShieldCheck, Award, Building, Sparkles } from 'lucide-react';
 import { BRAND } from '../../data/brandData';
 import waseemPortrait from '../../assets/MOHAMMED-WASEEM-MG.png';
 
@@ -37,6 +37,10 @@ export const AboutEntitySection: React.FC = () => {
                 <img
                   src={waseemPortrait}
                   alt="Mohammed Waseem MG — Founder of Top Selling Property & Director at Essotto Private Limited"
+                  width={400}
+                  height={500}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-auto object-cover filter contrast-[1.06] group-hover:scale-105 transition-all duration-700"
                 />
               </div>

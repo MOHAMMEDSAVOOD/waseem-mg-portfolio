@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BookOpen, ArrowUpRight, Clock, User } from 'lucide-react';
+import { ArrowUpRight, Clock, User } from 'lucide-react';
 import { ARTICLES } from '../../data/insightsData';
 import type { Article } from '../../types/ecosystem';
 
@@ -40,6 +40,10 @@ export const InsightsHub: React.FC = () => {
                     <img
                       src={article.image}
                       alt={article.title}
+                      width={800}
+                      height={450}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover filter contrast-110 group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>

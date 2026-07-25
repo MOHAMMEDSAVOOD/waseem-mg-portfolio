@@ -10,7 +10,7 @@ interface HeroSectionProps {
 
 export const HeroSection: React.FC<HeroSectionProps> = ({
   onNavigateTab,
-  onOpenContact,
+  onOpenContact: _onOpenContact,
 }) => {
   return (
     <section className="relative min-h-screen bg-[#050505] flex flex-col justify-between pt-28 pb-10 overflow-hidden select-none">
@@ -73,7 +73,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             <div className="relative z-10 w-[340px] sm:w-[420px] max-h-[560px] flex justify-center items-end group">
               <img
                 src={waseemPortrait}
-                alt="Mohammed Waseem MG"
+                alt="Mohammed Waseem MG — Founder & Real Estate Entrepreneur"
+                width={420}
+                height={560}
+                fetchPriority="high"
+                loading="eager"
+                decoding="async"
                 className="w-full h-auto object-contain filter contrast-[1.08] brightness-[1.03] scale-110 sm:scale-118 group-hover:scale-122 transition-all duration-700"
                 style={{
                   maskImage: 'radial-gradient(ellipse 66% 80% at 50% 46%, rgba(0,0,0,1) 35%, rgba(0,0,0,0) 88%)',

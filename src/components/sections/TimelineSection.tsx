@@ -1,5 +1,4 @@
 import React from 'react';
-import { Milestone } from 'lucide-react';
 import { TIMELINE } from '../../data/timelineData';
 
 export const TimelineSection: React.FC = () => {

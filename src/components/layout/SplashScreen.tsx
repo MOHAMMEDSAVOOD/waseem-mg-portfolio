@@ -39,7 +39,11 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
           <div className="absolute inset-0 rounded-full bg-red-600/15 blur-2xl animate-pulse" />
           <img
             src={mwmgLogo}
-            alt="MWMG Logo"
+            alt="Mohammed Waseem MG — MWMG Logo"
+            width={180}
+            height={90}
+            loading="eager"
+            decoding="async"
             className="h-14 sm:h-16 w-auto object-contain relative z-10 animate-in zoom-in-95 duration-500 filter drop-shadow-[0_4px_20px_rgba(220,38,38,0.4)]"
           />
         </div>

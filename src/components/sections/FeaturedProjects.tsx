@@ -1,5 +1,4 @@
 import React from 'react';
-import { Briefcase, ArrowUpRight } from 'lucide-react';
 import { PROJECTS } from '../../data/projectsData';
 
 export const FeaturedProjects: React.FC = () => {
@@ -33,6 +32,10 @@ export const FeaturedProjects: React.FC = () => {
                   <img
                     src={proj.image}
                     alt={proj.title}
+                    width={800}
+                    height={450}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover filter contrast-110 group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute top-3 left-3 px-2 py-0.5 rounded bg-black/80 text-[10px] font-mono-tag text-red-500 font-bold border border-white/10 uppercase">

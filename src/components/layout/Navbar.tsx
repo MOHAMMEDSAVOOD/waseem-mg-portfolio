@@ -56,7 +56,11 @@ export const Navbar: React.FC<NavbarProps> = ({
           >
             <img
               src={mwmgLogo}
-              alt="Mohammed Waseem MG"
+              alt="Mohammed Waseem MG — Official Logo"
+              width={200}
+              height={100}
+              loading="eager"
+              decoding="async"
               className="h-18 sm:h-22 lg:h-28 w-auto object-contain hover:scale-105 transition-all duration-300 filter drop-shadow-[0_6px_25px_rgba(220,38,38,0.4)]"
             />
           </button>

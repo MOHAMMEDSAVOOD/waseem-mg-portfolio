@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-
-  <!-- ═══ PRIMARY — Executive Homepage ═══ -->
   <url>
     <loc>https://mohammedwaseem.com/</loc>
     <lastmod>2026-07-26</lastmod>
@@ -12,85 +9,12 @@
     <image:image>
       <image:loc>https://mohammedwaseem.com/MOHAMMED-WASEEM-MG.png</image:loc>
       <image:title>Mohammed Waseem MG — Founder &amp; Real Estate Entrepreneur</image:title>
-      <image:caption>Official executive portrait of Mohammed Waseem MG (Waseem MG), Founder of Top Selling Property and Director at Essotto Private Limited, Whitefield, Bengaluru 560066, India.</image:caption>
+      <image:caption>Mohammed Waseem MG (Waseem MG), Founder of Top Selling Property &amp; Director at Essotto Private Limited in Whitefield, Bengaluru.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://mohammedwaseem.com/mwmg-logo.png</image:loc>
-      <image:title>Mohammed Waseem MG — MWMG Official Logo</image:title>
-      <image:caption>Official logo of Mohammed Waseem MG (MWMG) — Founder of Essotto Private Limited and Top Selling Property.</image:caption>
+      <image:title>Mohammed Waseem MG — Official Logo</image:title>
+      <image:caption>Official logo of Mohammed Waseem MG (MWMG) — Founder of Essotto Private Limited.</image:caption>
     </image:image>
   </url>
-
-  <!-- ═══ ABOUT — Leadership &amp; Vision ═══ -->
-  <url>
-    <loc>https://mohammedwaseem.com/#about</loc>
-    <lastmod>2026-07-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-
-  <!-- ═══ ECOSYSTEM — 12 Ventures ═══ -->
-  <url>
-    <loc>https://mohammedwaseem.com/#ecosystem</loc>
-    <lastmod>2026-07-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
-
-  <!-- ═══ VENTURES — Business Directory ═══ -->
-  <url>
-    <loc>https://mohammedwaseem.com/#ventures</loc>
-    <lastmod>2026-07-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-
-  <!-- ═══ PROJECTS — PropTech Innovations ═══ -->
-  <url>
-    <loc>https://mohammedwaseem.com/#projects</loc>
-    <lastmod>2026-07-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <!-- ═══ INSIGHTS — Executive Articles ═══ -->
-  <url>
-    <loc>https://mohammedwaseem.com/#insights</loc>
-    <lastmod>2026-07-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-    <news:news>
-      <news:publication>
-        <news:name>Business Edition by Mohammed Waseem MG</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-07-26</news:publication_date>
-      <news:title>Executive Insights by Mohammed Waseem MG — Real Estate, PropTech &amp; Business Strategy</news:title>
-    </news:news>
-  </url>
-
-  <!-- ═══ SPEAKING — Press &amp; Media ═══ -->
-  <url>
-    <loc>https://mohammedwaseem.com/#speaking</loc>
-    <lastmod>2026-07-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <!-- ═══ FAQ — Entity Q&amp;A ═══ -->
-  <url>
-    <loc>https://mohammedwaseem.com/#faq</loc>
-    <lastmod>2026-07-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-
-  <!-- ═══ CONTACT — Executive Office ═══ -->
-  <url>
-    <loc>https://mohammedwaseem.com/#contact</loc>
-    <lastmod>2026-07-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-  </url>
-
 </urlset>
