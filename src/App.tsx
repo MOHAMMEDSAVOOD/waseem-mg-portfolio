@@ -7,6 +7,7 @@ import { SEOHead } from './components/seo/SEOHead';
 import { GoogleAnalytics } from './components/analytics/GoogleAnalytics';
 
 import { HeroSection } from './components/sections/HeroSection';
+import { AboutEntitySection } from './components/sections/AboutEntitySection';
 import { BrandPositioning } from './components/sections/BrandPositioning';
 import { EcosystemHub } from './components/sections/EcosystemHub';
 import { FeaturedProjects } from './components/sections/FeaturedProjects';
@@ -17,6 +18,7 @@ import { TimelineSection } from './components/sections/TimelineSection';
 import { ImpactMetrics } from './components/sections/ImpactMetrics';
 import { SpeakingPressKit } from './components/sections/SpeakingPressKit';
 import { GallerySection } from './components/sections/GallerySection';
+import { FAQSection } from './components/sections/FAQSection';
 import { ContactSection } from './components/sections/ContactSection';
 
 import type { Company } from './types/ecosystem';
@@ -67,26 +69,41 @@ export function App() {
               onNavigateTab={setActiveTab}
               onOpenContact={handleOpenContact}
             />
+            <div id="about">
+              <AboutEntitySection />
+            </div>
             <BrandPositioning />
-            <div id="ecosystem-section">
+            <div id="ecosystem">
               <EcosystemHub onSelectCompany={(comp) => setSelectedCompany(comp)} />
             </div>
-            <FeaturedProjects />
-            <ServicesGrid />
+            <div id="projects">
+              <FeaturedProjects />
+            </div>
+            <div id="services">
+              <ServicesGrid />
+            </div>
             <LeadershipPhilosophy />
-            <InsightsHub />
+            <div id="insights">
+              <InsightsHub />
+            </div>
             <TimelineSection />
             <ImpactMetrics />
-            <SpeakingPressKit />
+            <div id="speaking">
+              <SpeakingPressKit />
+            </div>
             <GallerySection />
-            <div id="contact-section">
+            <div id="faq">
+              <FAQSection />
+            </div>
+            <div id="contact">
               <ContactSection />
             </div>
           </>
         )}
 
         {activeTab === 'about' && (
-          <div className="pt-24 space-y-12">
+          <div className="pt-24 space-y-12" id="about">
+            <AboutEntitySection />
             <BrandPositioning />
             <LeadershipPhilosophy />
             <TimelineSection />
@@ -94,25 +111,25 @@ export function App() {
         )}
 
         {activeTab === 'ecosystem' && (
-          <div className="pt-24 space-y-12">
+          <div className="pt-24 space-y-12" id="ecosystem">
             <EcosystemHub onSelectCompany={(comp) => setSelectedCompany(comp)} />
           </div>
         )}
 
         {activeTab === 'companies' && (
-          <div className="pt-24 space-y-12">
+          <div className="pt-24 space-y-12" id="ventures">
             <EcosystemHub onSelectCompany={(comp) => setSelectedCompany(comp)} />
           </div>
         )}
 
         {activeTab === 'projects' && (
-          <div className="pt-24 space-y-12">
+          <div className="pt-24 space-y-12" id="projects">
             <FeaturedProjects />
           </div>
         )}
 
         {activeTab === 'services' && (
-          <div className="pt-24 space-y-12">
+          <div className="pt-24 space-y-12" id="services">
             <ServicesGrid />
           </div>
         )}
@@ -124,20 +141,26 @@ export function App() {
         )}
 
         {activeTab === 'insights' && (
-          <div className="pt-24 space-y-12">
+          <div className="pt-24 space-y-12" id="insights">
             <InsightsHub />
           </div>
         )}
 
         {activeTab === 'speaking' && (
-          <div className="pt-24 space-y-12">
+          <div className="pt-24 space-y-12" id="speaking">
             <SpeakingPressKit />
             <GallerySection />
           </div>
         )}
 
+        {activeTab === 'faq' && (
+          <div className="pt-24 space-y-12" id="faq">
+            <FAQSection />
+          </div>
+        )}
+
         {activeTab === 'contact' && (
-          <div className="pt-24 space-y-12" id="contact-section">
+          <div className="pt-24 space-y-12" id="contact">
             <ContactSection />
           </div>
         )}

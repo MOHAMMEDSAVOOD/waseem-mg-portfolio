@@ -25,6 +25,7 @@ export interface Company {
   websiteUrl: string;
   futureRoadmap: string[];
   featured?: boolean;
+  seoDescription?: string;
 }
 
 export interface Project {

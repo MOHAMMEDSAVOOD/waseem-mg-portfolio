@@ -36,6 +36,11 @@ export const SEOHead: React.FC<SEOHeadProps> = ({ activeTab }) => {
         description =
           'Book Mohammed Waseem MG (Waseem MG) for keynotes, real estate panel discussions, press interviews, and media appearances.';
         break;
+      case 'faq':
+        title = 'FAQ | Mohammed Waseem MG | Top Selling Property & Essotto Entity Q&A';
+        description =
+          'Frequently asked questions about Mohammed Waseem MG (Waseem MG), Founder of Top Selling Property & Director at Essotto Private Limited in Whitefield, Bengaluru.';
+        break;
       case 'contact':
         title = 'Contact Mohammed Waseem MG | Executive Office | Whitefield Bengaluru';
         description =
