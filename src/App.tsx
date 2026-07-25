@@ -4,6 +4,7 @@ import { Footer } from './components/layout/Footer';
 import { SplashScreen } from './components/layout/SplashScreen';
 import { CompanyModal } from './components/sections/CompanyModal';
 import { SEOHead } from './components/seo/SEOHead';
+import { GoogleAnalytics } from './components/analytics/GoogleAnalytics';
 
 import { HeroSection } from './components/sections/HeroSection';
 import { BrandPositioning } from './components/sections/BrandPositioning';
@@ -35,6 +36,9 @@ export function App() {
 
   return (
     <div className="relative min-h-screen bg-[#050505] text-white selection:bg-red-600 selection:text-white font-sans antialiased">
+      {/* Google Analytics 4 — Production Only, SPA Route Tracking */}
+      <GoogleAnalytics activeTab={activeTab} />
+
       {/* Dynamic SEO Meta & Structured Data Controller */}
       <SEOHead activeTab={activeTab} />
 
