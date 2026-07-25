@@ -86,21 +86,17 @@ function sendPageView(measurementId: string, path: string, title: string): void 
 // ─── Component ───────────────────────────────────────────────────────────────
 
 export function GoogleAnalytics({ activeTab }: GoogleAnalyticsProps): null {
-  const measurementId = import.meta.env.VITE_GA_MEASUREMENT_ID as string | undefined;
+  const measurementId =
+    (import.meta.env.VITE_GA_MEASUREMENT_ID as string | undefined) || 'G-SFE2B3GRXJ';
 
-  // Step 1: Inject scripts once on mount (production only)
+  // Step 1: Inject scripts once on mount
   useEffect(() => {
-    if (!import.meta.env.PROD) return;
-    if (!measurementId) {
-      console.warn('[GA4] VITE_GA_MEASUREMENT_ID is not set. Analytics disabled.');
-      return;
-    }
+    if (!measurementId) return;
     injectGtagScript(measurementId);
   }, [measurementId]);
 
   // Step 2: Fire page_view on every tab change (SPA route tracking)
   useEffect(() => {
-    if (!import.meta.env.PROD) return;
     if (!measurementId) return;
 
     // Derive a clean path from the active tab
